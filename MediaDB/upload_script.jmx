@@ -137,8 +137,8 @@
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Assets | Upload file" enabled="true">
           <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
             <collectionProp name="HTTPFileArgs.files">
-              <elementProp name="C:\Users\Matti\git\entermediadb-jmeter\images\DSC00750.jpg" elementType="HTTPFileArg">
-                <stringProp name="File.path">C:\Users\Matti\git\entermediadb-jmeter\images\DSC00750.jpg</stringProp>
+              <elementProp name="images/DSC00750.jpg" elementType="HTTPFileArg">
+                <stringProp name="File.path">images/DSC00750.jpg</stringProp>
                 <stringProp name="File.paramname">file.0</stringProp>
                 <stringProp name="File.mimetype">application/octect-stream</stringProp>
               </elementProp>
