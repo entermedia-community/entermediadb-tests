@@ -16,17 +16,17 @@
       </Arguments>
       <hashTree/>
       <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
-        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
           <collectionProp name="Arguments.arguments"/>
         </elementProp>
-        <stringProp name="HTTPSampler.domain">em9.entermediadb.org</stringProp>
-        <stringProp name="HTTPSampler.port">80</stringProp>
-        <stringProp name="HTTPSampler.protocol">http</stringProp>
-        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-        <stringProp name="HTTPSampler.path"></stringProp>
-        <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
-        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        <stringProp name="httpampler.domain">em9.entermediadb.org</stringProp>
+        <stringProp name="httpampler.port">80</stringProp>
+        <stringProp name="httpampler.protocol">http</stringProp>
+        <stringProp name="httpampler.contentEncoding"></stringProp>
+        <stringProp name="httpampler.path"></stringProp>
+        <stringProp name="httpampler.concurrentPool">6</stringProp>
+        <stringProp name="httpampler.connect_timeout"></stringProp>
+        <stringProp name="httpampler.response_timeout"></stringProp>
       </ConfigTestElement>
       <hashTree/>
       <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
@@ -51,8 +51,8 @@
         <hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Login" enabled="true"/>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="48 /assets/emshare/authentication/login.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="48 /assets/emshare/authentication/login.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="loginokpage" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -84,21 +84,21 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">em9.entermediadb.org</stringProp>
-              <stringProp name="HTTPSampler.port">80</stringProp>
-              <stringProp name="HTTPSampler.protocol"></stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare/authentication/login.html</stringProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="httpampler.domain">em9.entermediadb.org</stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol"></stringProp>
+              <stringProp name="httpampler.contentEncoding"></stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/authentication/login.html</stringProp>
+              <stringProp name="httpampler.method">POST</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
               <stringProp name="TestPlan.comments">Detected the start of a redirect chain</stringProp>
-            </HTTPSamplerProxy>
+            </httpamplerProxy>
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
@@ -134,8 +134,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="40 /assets/emshare/authentication/login.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="40 /assets/emshare/authentication/login.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="loginokpage" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -167,27 +167,27 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">em9.entermediadb.org</stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare/authentication/login.html</stringProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="httpampler.domain">em9.entermediadb.org</stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding"></stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/authentication/login.html</stringProp>
+              <stringProp name="httpampler.method">POST</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
               <stringProp name="TestPlan.comments">Detected the start of a redirect chain</stringProp>
-            </HTTPSamplerProxy>
+            </httpamplerProxy>
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/authentication/nopermissions.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/authentication/nopermissions.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -217,24 +217,24 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="49 /assets/emshare/index.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="49 /assets/emshare/index.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">em9.entermediadb.org</stringProp>
-              <stringProp name="HTTPSampler.port">80</stringProp>
-              <stringProp name="HTTPSampler.protocol"></stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare/index.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain">em9.entermediadb.org</stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol"></stringProp>
+              <stringProp name="httpampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/index.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
@@ -359,7 +359,7 @@
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="EMShare2" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="emshare" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -378,8 +378,8 @@
           <hashTree/>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Change results view" enabled="true"/>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="204 /assets/emshare2/components/results/changeresultview.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="204 /assets/emshare/components/results/changeresultview.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="oemaxlevel" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -432,26 +432,26 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">em9dev.entermediadb.org</stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/components/results/changeresultview.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain">em9.entermediadb.org</stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/components/results/changeresultview.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -477,8 +477,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="205 /assets/emshare2/components/results/changeresultview.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="205 /assets/emshare/components/results/changeresultview.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="oemaxlevel" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -531,26 +531,26 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">em9dev.entermediadb.org</stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/components/results/changeresultview.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain">em9.entermediadb.org</stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/components/results/changeresultview.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -576,8 +576,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="206 /assets/emshare2/components/results/changeresultview.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="206 /assets/emshare/components/results/changeresultview.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="oemaxlevel" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -630,26 +630,26 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">em9dev.entermediadb.org</stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/components/results/changeresultview.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain">em9.entermediadb.org</stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/components/results/changeresultview.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -675,8 +675,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="248 /assets/emshare2/components/results/changeresultview.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="248 /assets/emshare/components/results/changeresultview.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="oemaxlevel" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -743,26 +743,26 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">em9dev.entermediadb.org</stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/components/results/changeresultview.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain">em9.entermediadb.org</stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/components/results/changeresultview.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -788,8 +788,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="249 /assets/emshare2/components/results/changeresultview.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="249 /assets/emshare/components/results/changeresultview.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="oemaxlevel" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -856,26 +856,26 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">em9dev.entermediadb.org</stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/components/results/changeresultview.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain">em9.entermediadb.org</stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/components/results/changeresultview.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -904,8 +904,8 @@
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Change language" enabled="true"/>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="upl965 /assets/emshare2/components/languages/changelanguage.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="upl965 /assets/emshare/components/languages/changelanguage.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="newlang" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -917,27 +917,27 @@
                   <elementProp name="origURL" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">origURL</stringProp>
-                    <stringProp name="Argument.value">/assets/emshare2/index.html</stringProp>
+                    <stringProp name="Argument.value">/assets/emshare/index.html</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/components/languages/changelanguage.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding"></stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/components/languages/changelanguage.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
               <stringProp name="TestPlan.comments">Detected the start of a redirect chain</stringProp>
-            </HTTPSamplerProxy>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -951,7 +951,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -977,8 +977,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="upl976 /assets/emshare2/components/languages/changelanguage.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="upl976 /assets/emshare/components/languages/changelanguage.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="newlang" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -990,27 +990,27 @@
                   <elementProp name="origURL" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">origURL</stringProp>
-                    <stringProp name="Argument.value">/assets/emshare2/index.html</stringProp>
+                    <stringProp name="Argument.value">/assets/emshare/index.html</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/components/languages/changelanguage.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/components/languages/changelanguage.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
               <stringProp name="TestPlan.comments">Detected the start of a redirect chain</stringProp>
-            </HTTPSamplerProxy>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -1024,7 +1024,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1050,8 +1050,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="upl987 /assets/emshare2/components/languages/changelanguage.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="upl987 /assets/emshare/components/languages/changelanguage.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="newlang" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -1063,27 +1063,27 @@
                   <elementProp name="origURL" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">origURL</stringProp>
-                    <stringProp name="Argument.value">/assets/emshare2/index.html</stringProp>
+                    <stringProp name="Argument.value">/assets/emshare/index.html</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/components/languages/changelanguage.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/components/languages/changelanguage.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
               <stringProp name="TestPlan.comments">Detected the start of a redirect chain</stringProp>
-            </HTTPSamplerProxy>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -1097,7 +1097,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1123,8 +1123,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="upl993 /assets/emshare2/components/languages/changelanguage.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="upl993 /assets/emshare/components/languages/changelanguage.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="newlang" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -1136,26 +1136,26 @@
                   <elementProp name="origURL" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">origURL</stringProp>
-                    <stringProp name="Argument.value">/assets/emshare2/index.html</stringProp>
+                    <stringProp name="Argument.value">/assets/emshare/index.html</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/components/languages/changelanguage.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/components/languages/changelanguage.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -1169,7 +1169,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/settings/users/usermanager/groups/modifygroup.html?groupid=administrators</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/settings/users/usermanager/groups/modifygroup.html?groupid=administrators</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1195,8 +1195,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="upl1011 /assets/emshare2/components/languages/changelanguage.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="upl1011 /assets/emshare/components/languages/changelanguage.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="newlang" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -1208,27 +1208,27 @@
                   <elementProp name="origURL" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">true</boolProp>
                     <stringProp name="Argument.name">origURL</stringProp>
-                    <stringProp name="Argument.value">/assets/emshare2/index.html</stringProp>
+                    <stringProp name="Argument.value">/assets/emshare/index.html</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/components/languages/changelanguage.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/components/languages/changelanguage.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
               <stringProp name="TestPlan.comments">Detected the start of a redirect chain</stringProp>
-            </HTTPSamplerProxy>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -1242,7 +1242,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/settings/users/usermanager/groups/modifygroup.html?groupid=administrators</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/settings/users/usermanager/groups/modifygroup.html?groupid=administrators</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1271,8 +1271,8 @@
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Filter for file type" enabled="true"/>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="444 /assets/emshare2/views/search/filter.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="444 /assets/emshare/views/search/filter.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="oemaxlevel" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -1339,20 +1339,20 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/search/filter.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding"></stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/search/filter.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -1366,7 +1366,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1392,8 +1392,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="449 /assets/emshare2/views/search/filter.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="449 /assets/emshare/views/search/filter.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="oemaxlevel" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -1460,20 +1460,20 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/search/filter.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/search/filter.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -1487,7 +1487,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1513,8 +1513,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="450 /assets/emshare2/views/search/filter.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="450 /assets/emshare/views/search/filter.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="oemaxlevel" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -1581,20 +1581,20 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/search/filter.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/search/filter.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -1608,7 +1608,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1634,8 +1634,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="452 /assets/emshare2/views/search/filter.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="452 /assets/emshare/views/search/filter.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="oemaxlevel" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -1702,20 +1702,20 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/search/filter.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/search/filter.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -1729,7 +1729,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1755,8 +1755,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="453 /assets/emshare2/views/search/filter.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="453 /assets/emshare/views/search/filter.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="oemaxlevel" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -1823,20 +1823,20 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/search/filter.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/search/filter.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -1850,7 +1850,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1876,8 +1876,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="454 /assets/emshare2/views/search/filter.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="454 /assets/emshare/views/search/filter.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="oemaxlevel" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -1944,26 +1944,26 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/search/filter.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/search/filter.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1989,8 +1989,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="455 /assets/emshare2/views/search/filter.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="455 /assets/emshare/views/search/filter.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="oemaxlevel" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -2057,26 +2057,26 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/search/filter.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/search/filter.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2105,8 +2105,8 @@
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Filter for asset type" enabled="true"/>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="462 /assets/emshare2/views/search/filter.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="462 /assets/emshare/views/search/filter.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="oemaxlevel" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -2173,20 +2173,20 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/search/filter.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/search/filter.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -2200,7 +2200,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2226,8 +2226,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="463 /assets/emshare2/views/search/filter.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="463 /assets/emshare/views/search/filter.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="oemaxlevel" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -2294,26 +2294,26 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/search/filter.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/search/filter.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2339,8 +2339,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="464 /assets/emshare2/views/search/filter.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="464 /assets/emshare/views/search/filter.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="oemaxlevel" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -2407,26 +2407,26 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/search/filter.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/search/filter.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2455,8 +2455,8 @@
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Email asset" enabled="true"/>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="736 /assets/emshare2/views/activity/emailassets.html?hitssessionid=hitsassetassets/catalog" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="736 /assets/emshare/views/activity/emailassets.html?hitssessionid=hitsassetassets/catalog" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="livequery" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -2474,20 +2474,20 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/activity/emailassets.html?hitssessionid=hitsassetassets/catalog</stringProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/activity/emailassets.html?hitssessionid=hitsassetassets/catalog</stringProp>
+              <stringProp name="httpampler.method">POST</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -2501,7 +2501,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2531,8 +2531,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="750 /assets/emshare2/views/activity/share/previewemail.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="750 /assets/emshare/views/activity/share/previewemail.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="searchtype" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -2578,20 +2578,20 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port"></stringProp>
-              <stringProp name="HTTPSampler.protocol"></stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/activity/share/previewemail.html</stringProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port"></stringProp>
+              <stringProp name="httpampler.protocol"></stringProp>
+              <stringProp name="httpampler.contentEncoding"></stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/activity/share/previewemail.html</stringProp>
+              <stringProp name="httpampler.method">POST</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -2605,7 +2605,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/activity/share/step2.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/activity/share/step2.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2635,8 +2635,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="761 /assets/emshare2/views/activity/share/processorder.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="761 /assets/emshare/views/activity/share/processorder.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="field" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -2689,20 +2689,20 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/activity/share/processorder.html</stringProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding"></stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/activity/share/processorder.html</stringProp>
+              <stringProp name="httpampler.method">POST</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -2716,7 +2716,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/activity/share/previewemail.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/activity/share/previewemail.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2749,8 +2749,8 @@
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Add new collection" enabled="true"/>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="351 /assets/emshare2/views/modules/librarycollection/createcollection.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="351 /assets/emshare/views/modules/librarycollection/createcollection.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="save" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -2824,27 +2824,27 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">em9dev.entermediadb.org</stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/modules/librarycollection/createcollection.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="httpampler.domain">em9.entermediadb.org</stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding"></stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/modules/librarycollection/createcollection.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
               <stringProp name="TestPlan.comments">Detected the start of a redirect chain</stringProp>
-            </HTTPSamplerProxy>
+            </httpamplerProxy>
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2873,8 +2873,8 @@
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Add group" enabled="true"/>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="upl924 /assets/emshare2/views/settings/users/usermanager/groups/addgroup-finish.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="upl924 /assets/emshare/views/settings/users/usermanager/groups/addgroup-finish.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="groupname" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -2899,20 +2899,20 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/settings/users/usermanager/groups/addgroup-finish.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding"></stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/settings/users/usermanager/groups/addgroup-finish.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -2926,7 +2926,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/settings/users/usermanager/groups/modifygroup.html?groupid=administrators</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/settings/users/usermanager/groups/modifygroup.html?groupid=administrators</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2955,8 +2955,8 @@
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Add new child to collection" enabled="true"/>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="307 /assets/emshare2/components/opencollections/addnewchild.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="307 /assets/emshare/components/opencollections/addnewchild.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="libraryid" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -2988,20 +2988,20 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">em9dev.entermediadb.org</stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/components/opencollections/addnewchild.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain">em9.entermediadb.org</stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding"></stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/components/opencollections/addnewchild.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -3015,7 +3015,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -3041,8 +3041,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="308 /assets/emshare2/components/opencollections/addchildfinish.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="308 /assets/emshare/components/opencollections/addchildfinish.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="save" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -3137,20 +3137,20 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain">em9dev.entermediadb.org</stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/components/opencollections/addchildfinish.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain">em9.entermediadb.org</stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding"></stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/components/opencollections/addchildfinish.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -3164,7 +3164,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -3193,24 +3193,24 @@
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Add item to basket" enabled="true"/>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="640 /assets/emshare2/components/basket/addselection.html?hitssessionid=hitsassetassets/catalog" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="640 /assets/emshare/components/basket/addselection.html?hitssessionid=hitsassetassets/catalog" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/components/basket/addselection.html?hitssessionid=hitsassetassets/catalog</stringProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/components/basket/addselection.html?hitssessionid=hitsassetassets/catalog</stringProp>
+              <stringProp name="httpampler.method">POST</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -3224,7 +3224,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -3250,30 +3250,30 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="641 /assets/emshare2/components/basket/menuitem.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="641 /assets/emshare/components/basket/menuitem.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/components/basket/menuitem.html</stringProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/components/basket/menuitem.html</stringProp>
+              <stringProp name="httpampler.method">POST</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -3315,12 +3315,12 @@
           </ResponseAssertion>
           <hashTree/>
         </hashTree>
-        <RecordingController guiclass="RecordController" testclass="RecordingController" testname="Recording Controller EMShare2 11-20" enabled="true"/>
+        <RecordingController guiclass="RecordController" testclass="RecordingController" testname="Recording Controller emshare 11-20" enabled="true"/>
         <hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Export to csv" enabled="true"/>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="466 /assets/emshare2/views/modules/asset/export/download/export_asset.csv" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="466 /assets/emshare/views/modules/asset/export/download/export_asset.csv" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="hitssessionid" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -3338,20 +3338,20 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/modules/asset/export/download/export_asset.csv</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding"></stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/modules/asset/export/download/export_asset.csv</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -3365,7 +3365,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -3394,8 +3394,8 @@
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Publish to server" enabled="true"/>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="794 /assets/emshare2/views/activity/publishassets.html?hitssessionid=hitsassetassets/catalog" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="794 /assets/emshare/views/activity/publishassets.html?hitssessionid=hitsassetassets/catalog" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="livequery" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -3413,26 +3413,26 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/activity/publishassets.html?hitssessionid=hitsassetassets/catalog</stringProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding">UTF-8</stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/activity/publishassets.html?hitssessionid=hitsassetassets/catalog</stringProp>
+              <stringProp name="httpampler.method">POST</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -3462,8 +3462,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="795 /assets/emshare2/views/activity/publish/step2.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="795 /assets/emshare/views/activity/publish/step2.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="view" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -3551,20 +3551,20 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/activity/publish/step2.html</stringProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding"></stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/activity/publish/step2.html</stringProp>
+              <stringProp name="httpampler.method">POST</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -3578,7 +3578,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -3608,8 +3608,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="806 /assets/emshare2/views/activity/publish/processorder.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="806 /assets/emshare/views/activity/publish/processorder.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="searchtype" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -3704,26 +3704,26 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/activity/publish/processorder.html</stringProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding"></stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/activity/publish/processorder.html</stringProp>
+              <stringProp name="httpampler.method">POST</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/activity/publish/step2.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/activity/publish/step2.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -3756,8 +3756,8 @@
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Download content" enabled="true"/>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="826 /assets/emshare2/views/activity/downloadassets.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="826 /assets/emshare/views/activity/downloadassets.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="hitssessionid" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -3775,20 +3775,20 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/activity/downloadassets.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding"></stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/activity/downloadassets.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -3802,7 +3802,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/asset/index.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/asset/index.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -3828,8 +3828,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="827 /assets/emshare2/views/activity/download/processorder.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="827 /assets/emshare/views/activity/download/processorder.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="view" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -3938,26 +3938,26 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/activity/download/processorder.html</stringProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding"></stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/activity/download/processorder.html</stringProp>
+              <stringProp name="httpampler.method">POST</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/activity/downloadassets.html?hitssessionid=hitsassetassets/catalog&amp;collectionid=</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/activity/downloadassets.html?hitssessionid=hitsassetassets/catalog&amp;collectionid=</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -3987,8 +3987,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="840 /assets/emshare2/views/activity/download/ajaxorderstatus.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="840 /assets/emshare/views/activity/download/ajaxorderstatus.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="orderid" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -4006,26 +4006,26 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/activity/download/ajaxorderstatus.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding"></stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/activity/download/ajaxorderstatus.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/activity/download/processorder.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/activity/download/processorder.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -4051,8 +4051,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="842 /assets/emshare2/views/activity/download/zip/b20dbe13_64f8_411c_948c_5d6801a33f4a.zip" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="842 /assets/emshare/views/activity/download/zip/b20dbe13_64f8_411c_948c_5d6801a33f4a.zip" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="orderid" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -4063,20 +4063,20 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/activity/download/zip/b20dbe13_64f8_411c_948c_5d6801a33f4a.zip</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding"></stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/activity/download/zip/b20dbe13_64f8_411c_948c_5d6801a33f4a.zip</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -4090,7 +4090,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/activity/download/processorder.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/activity/download/processorder.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -4119,8 +4119,8 @@
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Search collection photo" enabled="true"/>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="upl1086 /assets/emshare2/views/modules/librarycollection/search.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="upl1086 /assets/emshare/views/modules/librarycollection/search.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="collectionid" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -4229,20 +4229,20 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/modules/librarycollection/search.html</stringProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding"></stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/modules/librarycollection/search.html</stringProp>
+              <stringProp name="httpampler.method">POST</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -4256,7 +4256,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/librarycollection/media/index.html?selectedlibrary=&amp;collectionid=AWZV7F8DsH-lWt2VlIyw</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/librarycollection/media/index.html?selectedlibrary=&amp;collectionid=AWZV7F8DsH-lWt2VlIyw</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -4289,8 +4289,8 @@
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Approve assets" enabled="true"/>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="upl1131 /assets/emshare2/views/modules/librarycollection/approval/approve.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="upl1131 /assets/emshare/views/modules/librarycollection/approval/approve.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="collectionid" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -4315,20 +4315,20 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/modules/librarycollection/approval/approve.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding"></stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/modules/librarycollection/approval/approve.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -4342,7 +4342,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/librarycollection/pending/AWZV7F8DsH-lWt2VlIyw.html</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/librarycollection/pending/AWZV7F8DsH-lWt2VlIyw.html</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -4371,8 +4371,8 @@
           </hashTree>
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Edit properties category" enabled="true"/>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="upl1190 /assets/emshare2/views/modules/category/categorysearch.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="upl1190 /assets/emshare/views/modules/category/categorysearch.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="categoryid" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -4390,20 +4390,20 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/modules/category/categorysearch.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding"></stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/modules/category/categorysearch.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -4417,7 +4417,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/librarycollection/media/index.html?collectionid=AWZWCL9VsH-lWt2VlIz1&amp;clearselection=true</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/librarycollection/media/index.html?collectionid=AWZWCL9VsH-lWt2VlIz1&amp;clearselection=true</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -4443,8 +4443,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="upl1209 /assets/emshare2/views/modules/category/edit/index.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="upl1209 /assets/emshare/views/modules/category/edit/index.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="id" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -4497,20 +4497,20 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/modules/category/edit/index.html</stringProp>
-              <stringProp name="HTTPSampler.method">GET</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding"></stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/modules/category/edit/index.html</stringProp>
+              <stringProp name="httpampler.method">GET</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -4524,7 +4524,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/category/categorysearch.html?categoryid=AWZV7F9csH-lWt2VlIyy&amp;nodeID=AWZV7F9csH-lWt2VlIyy</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/category/categorysearch.html?categoryid=AWZV7F9csH-lWt2VlIyy&amp;nodeID=AWZV7F9csH-lWt2VlIyy</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -4550,8 +4550,8 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="upl1210 /assets/emshare2/views/modules/category/edit/save.html" enabled="true">
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <httpamplerProxy guiclass="HttpTestSampleGui" testclass="httpamplerProxy" testname="upl1210 /assets/emshare/views/modules/category/edit/save.html" enabled="true">
+              <elementProp name="httpampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="save" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
@@ -4688,21 +4688,21 @@
                   </elementProp>
                 </collectionProp>
               </elementProp>
-              <stringProp name="HTTPSampler.domain"></stringProp>
-              <stringProp name="HTTPSampler.port">443</stringProp>
-              <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-              <stringProp name="HTTPSampler.path">/assets/emshare2/views/modules/category/edit/save.html</stringProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
-              <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">true</boolProp>
-              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-              <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            </HTTPSamplerProxy>
+              <stringProp name="httpampler.domain"></stringProp>
+              <stringProp name="httpampler.port">80</stringProp>
+              <stringProp name="httpampler.protocol">http</stringProp>
+              <stringProp name="httpampler.contentEncoding"></stringProp>
+              <stringProp name="httpampler.path">/assets/emshare/views/modules/category/edit/save.html</stringProp>
+              <stringProp name="httpampler.method">POST</stringProp>
+              <boolProp name="httpampler.follow_redirects">true</boolProp>
+              <boolProp name="httpampler.auto_redirects">false</boolProp>
+              <boolProp name="httpampler.use_keepalive">true</boolProp>
+              <boolProp name="httpampler.DO_MULTIPART_POST">true</boolProp>
+              <boolProp name="httpampler.BROWSER_COMPATIBLE_MULTIPART">true</boolProp>
+              <stringProp name="httpampler.embedded_url_re"></stringProp>
+              <stringProp name="httpampler.connect_timeout"></stringProp>
+              <stringProp name="httpampler.response_timeout"></stringProp>
+            </httpamplerProxy>
             <hashTree>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings"/>
@@ -4716,7 +4716,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">https://em9dev.entermediadb.org/assets/emshare2/views/modules/category/categorysearch.html?categoryid=AWZV7F9csH-lWt2VlIyy&amp;nodeID=AWZV7F9csH-lWt2VlIyy</stringProp>
+                    <stringProp name="Header.value">http://em9.entermediadb.org/assets/emshare/views/modules/category/categorysearch.html?categoryid=AWZV7F9csH-lWt2VlIyy&amp;nodeID=AWZV7F9csH-lWt2VlIyy</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
