@@ -2700,7 +2700,7 @@
                 <collectionProp name="HTTPFileArgs.files">
                   <elementProp name="C:\Users\Matti\git\EnterMediaDB\entermediadb-tests\MediaDB\images\DSC01155.jpg" elementType="HTTPFileArg">
                     <stringProp name="File.path">C:\Users\Matti\git\EnterMediaDB\entermediadb-tests\MediaDB\images\DSC01155.jpg</stringProp>
-                    <stringProp name="File.paramname"></stringProp>
+                    <stringProp name="File.paramname">DSC01155.jpg</stringProp>
                     <stringProp name="File.mimetype"></stringProp>
                   </elementProp>
                 </collectionProp>
@@ -2832,6 +2832,15 @@
           <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Edit Metadeta" enabled="true"/>
           <hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1717 /emshare/views/modules/asset/editor/multiedit/index.html" enabled="true">
+              <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
+                <collectionProp name="HTTPFileArgs.files">
+                  <elementProp name="C:\Users\Matti\git\EnterMediaDB\entermediadb-tests\MediaDB\images\vm0808h_video_matrix_switch_ss_en.docx" elementType="HTTPFileArg">
+                    <stringProp name="File.path">C:\Users\Matti\git\EnterMediaDB\entermediadb-tests\MediaDB\images\vm0808h_video_matrix_switch_ss_en.docx</stringProp>
+                    <stringProp name="File.paramname"></stringProp>
+                    <stringProp name="File.mimetype"></stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="hitssessionid" elementType="HTTPArgument">
@@ -5271,6 +5280,15 @@
         <stringProp name="ProxyControlGui.proxy_pause_http_sampler"></stringProp>
       </ProxyControl>
       <hashTree/>
+      <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+        <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+        <stringProp name="RegexExtractor.refname">orderid</stringProp>
+        <stringProp name="RegexExtractor.regex">&lt;input type=&quot;hidden&quot; name=&quot;orderid&quot; value=&quot;(.+?)&quot;/&gt;</stringProp>
+        <stringProp name="RegexExtractor.template">$1$</stringProp>
+        <stringProp name="RegexExtractor.default"></stringProp>
+        <stringProp name="RegexExtractor.match_number">0</stringProp>
+      </RegexExtractor>
+      <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Test group" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -5284,9 +5302,7 @@
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="-------------------" enabled="true"/>
-        <hashTree/>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="-------------------" enabled="true"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Simple Controller" enabled="true"/>
         <hashTree/>
       </hashTree>
     </hashTree>
