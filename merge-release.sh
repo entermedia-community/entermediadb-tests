@@ -1,14 +1,10 @@
 #!/bin/bash -x
-REPOS="/var/jenkins_home/jobs/merge_em9dev/workspace/repos"
-APP_EMSHARE="$REPOS/app-emshare"
-EM_SERVER="$REPOS/entermedia-server"
-EM_CORE="$REPOS/entermedia-core"
-EXT_OPENDIT="$REPOS/extension-openedit"
-DEMOALL="$REPOS/demoall"
-
-if [ ! -d "$REPOS" ]; then
-  mkdir $REPOS
-fi
+WORKSPACE="/var/jenkins_home/jobs/merge_em9dev/workspace"
+APP_EMSHARE="$WORKSPACE/app-emshare"
+EM_SERVER="$WORKSPACE/entermedia-server"
+EM_CORE="$WORKSPACE/entermedia-core"
+EXT_OPENDIT="$WORKSPACE/extension-openedit"
+DEMOALL="$WORKSPACE/demoall"
 
 if [ ! -d "$APP_EMSHARE" ]; then
   git clone git@github.com:entermedia-community/app-emshare.git
