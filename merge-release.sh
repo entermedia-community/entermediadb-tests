@@ -1,6 +1,5 @@
 #!/bin/bash -x
-
-REPOS="/var/jenkins_home/jobs/em9_tests/workspace/repos/"
+REPOS="/var/jenkins_home/jobs/merge_em9dev/workspace/repos"
 APP_EMSHARE="$REPOS/app-emshare"
 EM_SERVER="$REPOS/entermedia-server"
 EM_CORE="$REPOS/entermedia-core"
