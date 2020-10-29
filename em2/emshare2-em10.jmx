@@ -55,7 +55,7 @@
           </elementProp>
           <elementProp name="uploadPath" elementType="Argument">
             <stringProp name="Argument.name">uploadPath</stringProp>
-            <stringProp name="Argument.value">/home/cristobal/Media/jmeter</stringProp>
+            <stringProp name="Argument.value">./uploads/</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="uploadAsset1" elementType="Argument">
