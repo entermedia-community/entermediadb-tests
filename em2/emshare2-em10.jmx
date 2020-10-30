@@ -25,7 +25,7 @@
           </elementProp>
           <elementProp name="mainCatalog" elementType="Argument">
             <stringProp name="Argument.name">mainCatalog</stringProp>
-            <stringProp name="Argument.value">assets</stringProp>
+            <stringProp name="Argument.value">unittest</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="host" elementType="Argument">
@@ -963,7 +963,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${protocol}://${host}:${port}/unittest/emshare2/views/modules/asset/add/start.html?collectionid=${collectionId}</stringProp>
+                    <stringProp name="Header.value"></stringProp>
                   </elementProp>
                   <elementProp name="X-File-Name" elementType="Header">
                     <stringProp name="Header.name">X-File-Name</stringProp>
@@ -1068,7 +1068,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${protocol}://${host}:${port}/assets/${host}/views/modules/asset/components/upload/add/start.html?nodeID=${nodeID}&amp;hitssessionid=hitsassetassets/catalog</stringProp>
+                    <stringProp name="Header.value"></stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1286,7 +1286,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${scheme}://${host}:${port}/assets/${host}/views/modules/asset/index.html?hitssessionid=hitsassetassets/catalog&amp;assetclearselection=true&amp;clearselection=true&amp;assetclearfilters=true&amp;assetpage=1</stringProp>
+                    <stringProp name="Header.value"></stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1335,7 +1335,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${protocol}://${host}:${port}/assets/${host}/views/modules/asset/index.html?hitssessionid=hitsassetassets/catalog&amp;assetclearselection=true&amp;clearselection=true&amp;assetclearfilters=true&amp;assetpage=1</stringProp>
+                    <stringProp name="Header.value"></stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1384,7 +1384,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${protocol}://${host}:${port}/assets/${host}/views/modules/asset/index.html?hitssessionid=hitsassetassets/catalog&amp;assetclearselection=true&amp;clearselection=true&amp;assetclearfilters=true&amp;assetpage=1</stringProp>
+                    <stringProp name="Header.value"></stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1433,7 +1433,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${protocol}://${host}:${port}/assets/${host}/views/modules/asset/index.html?hitssessionid=hitsassetassets/catalog&amp;assetclearselection=true&amp;clearselection=true&amp;assetclearfilters=true&amp;assetpage=1</stringProp>
+                    <stringProp name="Header.value"></stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1472,8 +1472,8 @@
                   <stringProp name="Argument.value">${uploadPath}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
-                <elementProp name="fileName" elementType="Argument">
-                  <stringProp name="Argument.name">fileName</stringProp>
+                <elementProp name="fileName2" elementType="Argument">
+                  <stringProp name="Argument.name">fileName2</stringProp>
                   <stringProp name="Argument.value">${uploadAsset2}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
@@ -1684,11 +1684,11 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="uploadAsset1" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="uploadAsset2" enabled="true">
               <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
                 <collectionProp name="HTTPFileArgs.files">
-                  <elementProp name="${filePath}/${fileName}" elementType="HTTPFileArg">
-                    <stringProp name="File.path">${filePath}/${fileName}</stringProp>
+                  <elementProp name="${filePath}/${fileName2}" elementType="HTTPFileArg">
+                    <stringProp name="File.path">${filePath}/${fileName2}</stringProp>
                     <stringProp name="File.paramname">user_file[]</stringProp>
                     <stringProp name="File.mimetype">image/png</stringProp>
                   </elementProp>
@@ -1717,11 +1717,11 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${protocol}://${host}:${port}/unittest/emshare2/views/modules/asset/add/start.html?collectionid=${collectionId}</stringProp>
+                    <stringProp name="Header.value"></stringProp>
                   </elementProp>
                   <elementProp name="X-File-Name" elementType="Header">
                     <stringProp name="Header.name">X-File-Name</stringProp>
-                    <stringProp name="Header.value">${filePath}${fileName}</stringProp>
+                    <stringProp name="Header.value">${filePath}${fileName2}</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -1822,7 +1822,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${protocol}://${host}:${port}/assets/${host}/views/modules/asset/components/upload/add/start.html?nodeID=${nodeID}&amp;hitssessionid=hitsassetassets/catalog</stringProp>
+                    <stringProp name="Header.value"></stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2039,8 +2039,8 @@
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
-                    <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${scheme}://${host}:${port}/assets/${host}/views/modules/asset/index.html?hitssessionid=hitsassetassets/catalog&amp;assetclearselection=true&amp;clearselection=true&amp;assetclearfilters=true&amp;assetpage=1</stringProp>
+                    <stringProp name="Header.name"></stringProp>
+                    <stringProp name="Header.value"></stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2089,7 +2089,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${protocol}://${host}:${port}/assets/${host}/views/modules/asset/index.html?hitssessionid=hitsassetassets/catalog&amp;assetclearselection=true&amp;clearselection=true&amp;assetclearfilters=true&amp;assetpage=1</stringProp>
+                    <stringProp name="Header.value"></stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2138,7 +2138,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${protocol}://${host}:${port}/assets/${host}/views/modules/asset/index.html?hitssessionid=hitsassetassets/catalog&amp;assetclearselection=true&amp;clearselection=true&amp;assetclearfilters=true&amp;assetpage=1</stringProp>
+                    <stringProp name="Header.value"></stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
@@ -2187,7 +2187,7 @@
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${protocol}://${host}:${port}/assets/${host}/views/modules/asset/index.html?hitssessionid=hitsassetassets/catalog&amp;assetclearselection=true&amp;clearselection=true&amp;assetclearfilters=true&amp;assetpage=1</stringProp>
+                    <stringProp name="Header.value"></stringProp>
                   </elementProp>
                   <elementProp name="Accept-Language" elementType="Header">
                     <stringProp name="Header.name">Accept-Language</stringProp>
