@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo BUILD_NUMBER
+
 [[ -d dir ]] || mkdir results
 [[ -f dir/results10.csv ]] || touch results/results10.csv
 
