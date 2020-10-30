@@ -20,7 +20,7 @@
           </elementProp>
           <elementProp name="collectionName" elementType="Argument">
             <stringProp name="Argument.name">collectionName</stringProp>
-            <stringProp name="Argument.value">CollectionA2</stringProp>
+            <stringProp name="Argument.value">CollectionJ1</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="mainCatalog" elementType="Argument">
@@ -55,12 +55,12 @@
           </elementProp>
           <elementProp name="uploadPath" elementType="Argument">
             <stringProp name="Argument.name">uploadPath</stringProp>
-            <stringProp name="Argument.value">./uploads/</stringProp>
+            <stringProp name="Argument.value">assets/</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="uploadAsset1" elementType="Argument">
             <stringProp name="Argument.name">uploadAsset1</stringProp>
-            <stringProp name="Argument.value">test-asset-04.jpg</stringProp>
+            <stringProp name="Argument.value">test-asset-01.jpg</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="nodeID" elementType="Argument">
