@@ -20,7 +20,7 @@
           </elementProp>
           <elementProp name="collectionName" elementType="Argument">
             <stringProp name="Argument.name">collectionName</stringProp>
-            <stringProp name="Argument.value">CollectionJ1</stringProp>
+            <stringProp name="Argument.value">Jmeter${__P(buildNumber,1)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="mainCatalog" elementType="Argument">
@@ -71,6 +71,11 @@
           <elementProp name="uploadAsset2" elementType="Argument">
             <stringProp name="Argument.name">uploadAsset2</stringProp>
             <stringProp name="Argument.value">test-asset-03.jpg</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="buildNumber" elementType="Argument">
+            <stringProp name="Argument.name">buildNumber</stringProp>
+            <stringProp name="Argument.value">${__P(BuildNumber,1)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -941,7 +946,29 @@
                 </collectionProp>
               </elementProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-                <collectionProp name="Arguments.arguments"/>
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="collectionid" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">${collectionId}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">collectionid</stringProp>
+                  </elementProp>
+                  <elementProp name="field" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">keywords</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">field</stringProp>
+                  </elementProp>
+                  <elementProp name="keywords.value" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">Jmeter-${buildNumber}|Asset-${assetNum}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">keywords.value</stringProp>
+                  </elementProp>
+                </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">${port}</stringProp>
@@ -1695,13 +1722,35 @@
                 </collectionProp>
               </elementProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-                <collectionProp name="Arguments.arguments"/>
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="collectionid" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">${collectionId}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">collectionid</stringProp>
+                  </elementProp>
+                  <elementProp name="field" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">keywords</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">field</stringProp>
+                  </elementProp>
+                  <elementProp name="keywords.value" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">Jmeter-${buildNumber}|Asset-${assetNum}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">keywords.value</stringProp>
+                  </elementProp>
+                </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">${port}</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/${mainCatalog}/emshare2/views/modules/asset/components/upload/types/html5/finish.html?collectionid=${collectionId}&amp;currentcollection=${collectionId}&amp;field=keywords&amp;field=purpose</stringProp>
+              <stringProp name="HTTPSampler.path">/${mainCatalog}/emshare2/views/modules/asset/components/upload/types/html5/finish.html</stringProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
