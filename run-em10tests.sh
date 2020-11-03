@@ -15,6 +15,9 @@ do
   fi
 
 done < results/results10.csv
+<<<<<<< HEAD
 
 echo "Exiting with code: $JMEXIT"
+=======
+>>>>>>> master
 exit $JMEXIT
