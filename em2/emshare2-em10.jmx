@@ -20,7 +20,7 @@
           </elementProp>
           <elementProp name="collectionName" elementType="Argument">
             <stringProp name="Argument.name">collectionName</stringProp>
-            <stringProp name="Argument.value">UploadStuff${__P(buildNumber,2)}</stringProp>
+            <stringProp name="Argument.value">UploadStuff2${__P(buildNumber,2)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="mainCatalog" elementType="Argument">
@@ -80,7 +80,7 @@
           </elementProp>
           <elementProp name="collectionName2" elementType="Argument">
             <stringProp name="Argument.name">collectionName2</stringProp>
-            <stringProp name="Argument.value">J10${__P(buildNumber,2)}</stringProp>
+            <stringProp name="Argument.value">JmeterSync${__P(buildNumber,2)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="failedTests" elementType="Argument">
@@ -4285,12 +4285,19 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <stringProp name="Argument.name">keywords.value</stringProp>
                   </elementProp>
-                  <elementProp name="currentcollection" elementType="HTTPArgument">
+                  <elementProp name="currentcollection.value" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.value">${collectionId2}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                    <stringProp name="Argument.name">currentcollection</stringProp>
+                    <stringProp name="Argument.name">currentcollection.value</stringProp>
+                  </elementProp>
+                  <elementProp name="field" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">currentcollection</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">field</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
