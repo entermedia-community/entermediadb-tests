@@ -4285,19 +4285,19 @@
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <stringProp name="Argument.name">keywords.value</stringProp>
                   </elementProp>
-                  <elementProp name="currentcollection.value" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">${collectionId2}</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                    <stringProp name="Argument.name">currentcollection.value</stringProp>
-                  </elementProp>
                   <elementProp name="field" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.value">currentcollection</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                     <stringProp name="Argument.name">field</stringProp>
+                  </elementProp>
+                  <elementProp name="currentcollection.value" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">${collectionId2}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">currentcollection.value</stringProp>
                   </elementProp>
                 </collectionProp>
               </elementProp>
@@ -5748,7 +5748,7 @@
                 </HeaderManager>
                 <hashTree/>
               </hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="check status" enabled="true">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="check status" enabled="false">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                   <collectionProp name="Arguments.arguments">
                     <elementProp name="eventpath" elementType="HTTPArgument">
@@ -5968,7 +5968,7 @@
                 </HeaderManager>
                 <hashTree/>
                 <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait 5s for it to run" enabled="true">
-                  <stringProp name="ConstantTimer.delay">5000</stringProp>
+                  <stringProp name="ConstantTimer.delay">8000</stringProp>
                 </ConstantTimer>
                 <hashTree/>
               </hashTree>
@@ -6034,10 +6034,6 @@
                     </elementProp>
                   </collectionProp>
                 </HeaderManager>
-                <hashTree/>
-                <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait for Downloads (5s)" enabled="true">
-                  <stringProp name="ConstantTimer.delay">12000</stringProp>
-                </ConstantTimer>
                 <hashTree/>
               </hashTree>
             </hashTree>
