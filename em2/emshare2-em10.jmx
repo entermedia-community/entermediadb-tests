@@ -6029,7 +6029,7 @@
                 </HeaderManager>
                 <hashTree/>
                 <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait for Downloads (5s)" enabled="true">
-                  <stringProp name="ConstantTimer.delay">10000</stringProp>
+                  <stringProp name="ConstantTimer.delay">12000</stringProp>
                 </ConstantTimer>
                 <hashTree/>
               </hashTree>
