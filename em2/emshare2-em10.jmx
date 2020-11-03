@@ -83,6 +83,16 @@
             <stringProp name="Argument.value">JmeterTest${__P(buildNumber,2)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="failedTests" elementType="Argument">
+            <stringProp name="Argument.name">failedTests</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="exitOnError" elementType="Argument">
+            <stringProp name="Argument.name">exitOnError</stringProp>
+            <stringProp name="Argument.value">${__P(exitOnError,0)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -6259,6 +6269,43 @@
               </hashTree>
             </hashTree>
           </hashTree>
+          <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="ErrorCode Assertion" enabled="true">
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="script">String expectedCode = &quot;200&quot;;
+if(!expectedCode.equals(prev.getResponseCode())){
+  String currentValue = vars.get(&quot;failedTests&quot;);
+  currentValue = currentValue + &quot;Expected &lt;response code&gt; [&quot; + expectedCode + &quot;] but we got instead [&quot; + prev.getResponseCode() + &quot;] in sampler: &apos;&quot; + sampler.name + &quot;&apos;\n&quot;
+  vars.put(&quot;failedTests&quot;,currentValue);
+  log.info(currentValue);
+}</stringProp>
+            <stringProp name="scriptLanguage">groovy</stringProp>
+          </JSR223Assertion>
+          <hashTree/>
+          <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="Final Assertion" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">String testResults = vars.get(&quot;failedTests&quot;);
+
+if(testResults.length() &gt; 0 )
+{
+  println testResults;
+  log.info(testResults);
+  println &quot;Exit the system now with: System.exit(1)&quot;;
+  String exitOnError = vars.get(&quot;exitOnError&quot;);
+  if(exitOnError==&quot;1&quot;) {
+	  System.exit(1);
+  }
+  log.info(&quot;Error!&quot;)
+} else {
+  println &quot;Test passed!&quot;;
+  log.info(&quot;Test passed!&quot;);
+}</stringProp>
+          </JSR223Assertion>
+          <hashTree/>
         </hashTree>
       </hashTree>
       <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
