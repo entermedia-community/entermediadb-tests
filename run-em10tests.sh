@@ -15,4 +15,4 @@ do
   fi
 
 done < results/results10.csv
-exit $JMEXIT
+exit $?
