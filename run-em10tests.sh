@@ -15,4 +15,6 @@ do
   fi
 
 done < results/results10.csv
-exit $?
+
+echo "Exiting with code: $JMEXIT"
+exit $JMEXIT
