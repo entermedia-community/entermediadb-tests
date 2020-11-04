@@ -5967,10 +5967,6 @@
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
-                <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait 5s for it to run" enabled="true">
-                  <stringProp name="ConstantTimer.delay">8000</stringProp>
-                </ConstantTimer>
-                <hashTree/>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Check run" enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
@@ -6037,6 +6033,10 @@
                 <hashTree/>
               </hashTree>
             </hashTree>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait 5s for it to run" enabled="true">
+              <stringProp name="ConstantTimer.delay">10000</stringProp>
+            </ConstantTimer>
+            <hashTree/>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="checkAssetSyncedAsset" enabled="true">
               <boolProp name="TransactionController.includeTimers">false</boolProp>
               <boolProp name="TransactionController.parent">false</boolProp>
@@ -6064,8 +6064,8 @@
                 <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                   <collectionProp name="HeaderManager.headers">
                     <elementProp name="Referer" elementType="Header">
-                      <stringProp name="Header.name">Referer</stringProp>
-                      <stringProp name="Header.value">${scheme}://${host}:${port}/assets/${host}/views/modules/asset/index.html?hitssessionid=hitsasset${mainCatalog}/catalog&amp;assetclearselection=true&amp;clearselection=true&amp;assetclearfilters=true&amp;assetpage=1</stringProp>
+                      <stringProp name="Header.name"></stringProp>
+                      <stringProp name="Header.value"></stringProp>
                     </elementProp>
                     <elementProp name="Accept-Language" elementType="Header">
                       <stringProp name="Header.name">Accept-Language</stringProp>
@@ -6113,8 +6113,8 @@
                 <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                   <collectionProp name="HeaderManager.headers">
                     <elementProp name="Referer" elementType="Header">
-                      <stringProp name="Header.name">Referer</stringProp>
-                      <stringProp name="Header.value">${scheme}://${host}:${port}/assets/${host}/views/modules/asset/index.html?hitssessionid=hitsasset${mainCatalog}/catalog&amp;assetclearselection=true&amp;clearselection=true&amp;assetclearfilters=true&amp;assetpage=1</stringProp>
+                      <stringProp name="Header.name"></stringProp>
+                      <stringProp name="Header.value"></stringProp>
                     </elementProp>
                     <elementProp name="Accept-Language" elementType="Header">
                       <stringProp name="Header.name">Accept-Language</stringProp>
@@ -6162,8 +6162,8 @@
                 <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                   <collectionProp name="HeaderManager.headers">
                     <elementProp name="Referer" elementType="Header">
-                      <stringProp name="Header.name">Referer</stringProp>
-                      <stringProp name="Header.value">${scheme}://${host}:${port}/assets/${host}/views/modules/asset/index.html?hitssessionid=hitsasset${mainCatalog}/catalog&amp;assetclearselection=true&amp;clearselection=true&amp;assetclearfilters=true&amp;assetpage=1</stringProp>
+                      <stringProp name="Header.name"></stringProp>
+                      <stringProp name="Header.value"></stringProp>
                     </elementProp>
                     <elementProp name="Accept-Language" elementType="Header">
                       <stringProp name="Header.name">Accept-Language</stringProp>
