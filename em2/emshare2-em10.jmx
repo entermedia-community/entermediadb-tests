@@ -5882,6 +5882,11 @@
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+                  <stringProp name="TestPlan.comments">waiting 10 seconds, before runing scheduler</stringProp>
+                  <stringProp name="ConstantTimer.delay">10000</stringProp>
+                </ConstantTimer>
+                <hashTree/>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Run Scheduler" enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
@@ -6031,11 +6036,12 @@
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
+                <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait 5s for it to run" enabled="true">
+                  <stringProp name="ConstantTimer.delay">5000</stringProp>
+                  <stringProp name="TestPlan.comments">Waits for siteb to run scheduler</stringProp>
+                </ConstantTimer>
+                <hashTree/>
               </hashTree>
-              <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait 10s for it to run" enabled="true">
-                <stringProp name="ConstantTimer.delay">10000</stringProp>
-              </ConstantTimer>
-              <hashTree/>
             </hashTree>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="checkAssetSyncedAsset" enabled="true">
               <boolProp name="TransactionController.includeTimers">false</boolProp>
