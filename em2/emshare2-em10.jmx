@@ -6032,11 +6032,11 @@
                 </HeaderManager>
                 <hashTree/>
               </hashTree>
+              <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait 10s for it to run" enabled="true">
+                <stringProp name="ConstantTimer.delay">10000</stringProp>
+              </ConstantTimer>
+              <hashTree/>
             </hashTree>
-            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Wait 5s for it to run" enabled="true">
-              <stringProp name="ConstantTimer.delay">10000</stringProp>
-            </ConstantTimer>
-            <hashTree/>
             <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="checkAssetSyncedAsset" enabled="true">
               <boolProp name="TransactionController.includeTimers">false</boolProp>
               <boolProp name="TransactionController.parent">false</boolProp>
