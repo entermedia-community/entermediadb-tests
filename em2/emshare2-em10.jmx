@@ -93,6 +93,11 @@
             <stringProp name="Argument.value">${__P(exitOnError,0)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="year" elementType="Argument">
+            <stringProp name="Argument.name">year</stringProp>
+            <stringProp name="Argument.value">2021</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -1093,7 +1098,7 @@
               <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Get&apos;s Asset Name" enabled="true">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">uploadedAssetName</stringProp>
-                <stringProp name="RegexExtractor.regex">&lt;tr.*title=&quot;Collections\/General\/${collectionName}\/2020\/(.+?)\.([a-zA-Z0-9]*)&quot;.*&gt;</stringProp>
+                <stringProp name="RegexExtractor.regex">&lt;tr.*title=&quot;Collections\/General\/${collectionName}\/${year}\/(.+?)\.([a-zA-Z0-9]*)&quot;.*&gt;</stringProp>
                 <stringProp name="RegexExtractor.template">$1$</stringProp>
                 <stringProp name="RegexExtractor.default"></stringProp>
                 <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -1105,7 +1110,7 @@
               <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Get&apos;s Asset Extension" enabled="true">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">uploadedAssetExt</stringProp>
-                <stringProp name="RegexExtractor.regex">&lt;tr.*title=&quot;Collections\/General\/${collectionName}\/2020\/(.+?)\.(.+?)&quot;.*&gt;</stringProp>
+                <stringProp name="RegexExtractor.regex">&lt;tr.*title=&quot;Collections\/General\/${collectionName}\/${year}\/(.+?)\.(.+?)&quot;.*&gt;</stringProp>
                 <stringProp name="RegexExtractor.template">$2$</stringProp>
                 <stringProp name="RegexExtractor.default">jpg</stringProp>
                 <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -1313,7 +1318,7 @@
               <stringProp name="HTTPSampler.port">${port}</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/${mainCatalog}/mediadb/services/module/asset/downloads/generated/Collections/General/${collectionName}/2020/${uploadedAssetName}.${uploadedAssetExt}/image1024x768.jpg/${uploadedAssetName}L.${uploadedAssetExt}?includemetadata=true</stringProp>
+              <stringProp name="HTTPSampler.path">/${mainCatalog}/mediadb/services/module/asset/downloads/generated/Collections/General/${collectionName}/${year}/${uploadedAssetName}.${uploadedAssetExt}/image1024x768.jpg/${uploadedAssetName}L.${uploadedAssetExt}?includemetadata=true</stringProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1362,7 +1367,7 @@
               <stringProp name="HTTPSampler.port">${port}</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/${mainCatalog}/mediadb/services/module/asset/downloads/generated/Collections/General/${collectionName}/2020/${uploadedAssetName}.${uploadedAssetExt}/image550x350.jpg/${uploadedAssetName}M.${uploadedAssetExt}?includemetadata=true</stringProp>
+              <stringProp name="HTTPSampler.path">/${mainCatalog}/mediadb/services/module/asset/downloads/generated/Collections/General/${collectionName}/${year}/${uploadedAssetName}.${uploadedAssetExt}/image550x350.jpg/${uploadedAssetName}M.${uploadedAssetExt}?includemetadata=true</stringProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -1411,7 +1416,7 @@
               <stringProp name="HTTPSampler.port">${port}</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/${mainCatalog}/mediadb/services/module/asset/downloads/generated/Collections/General/${collectionName}/2020/${uploadedAssetName}.${uploadedAssetExt}/image110x62cropped.jpg/${uploadedAssetName}110x62cropped.${uploadedAssetExt}?includemetadata=true</stringProp>
+              <stringProp name="HTTPSampler.path">/${mainCatalog}/mediadb/services/module/asset/downloads/generated/Collections/General/${collectionName}/${year}/${uploadedAssetName}.${uploadedAssetExt}/image110x62cropped.jpg/${uploadedAssetName}110x62cropped.${uploadedAssetExt}?includemetadata=true</stringProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4409,7 +4414,7 @@
               <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Get&apos;s Asset Name" enabled="true">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">uploadedAssetName</stringProp>
-                <stringProp name="RegexExtractor.regex">&lt;tr.*title=&quot;Collections\/General\/${collectionName2}\/2020\/(.+?)\.([a-zA-Z0-9]*)&quot;.*&gt;</stringProp>
+                <stringProp name="RegexExtractor.regex">&lt;tr.*title=&quot;Collections\/General\/${collectionName2}\/${year}\/(.+?)\.([a-zA-Z0-9]*)&quot;.*&gt;</stringProp>
                 <stringProp name="RegexExtractor.template">$1$</stringProp>
                 <stringProp name="RegexExtractor.default"></stringProp>
                 <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -4421,7 +4426,7 @@
               <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Get&apos;s Asset Extension" enabled="true">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">uploadedAssetExt</stringProp>
-                <stringProp name="RegexExtractor.regex">&lt;tr.*title=&quot;Collections\/General\/${collectionName2}\/2020\/(.+?)\.(.+?)&quot;.*&gt;</stringProp>
+                <stringProp name="RegexExtractor.regex">&lt;tr.*title=&quot;Collections\/General\/${collectionName2}\/${year}\/(.+?)\.(.+?)&quot;.*&gt;</stringProp>
                 <stringProp name="RegexExtractor.template">$2$</stringProp>
                 <stringProp name="RegexExtractor.default">jpg</stringProp>
                 <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -4544,7 +4549,7 @@
               <stringProp name="HTTPSampler.port">${port}</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/${mainCatalog}/mediadb/services/module/asset/downloads/generated/Collections/General/${collectionName2}/2020/${uploadedAssetName}.${uploadedAssetExt}/image1024x768.jpg/${uploadedAssetName}L.${uploadedAssetExt}?includemetadata=true</stringProp>
+              <stringProp name="HTTPSampler.path">/${mainCatalog}/mediadb/services/module/asset/downloads/generated/Collections/General/${collectionName2}/${year}/${uploadedAssetName}.${uploadedAssetExt}/image1024x768.jpg/${uploadedAssetName}L.${uploadedAssetExt}?includemetadata=true</stringProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4593,7 +4598,7 @@
               <stringProp name="HTTPSampler.port">${port}</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/${mainCatalog}/mediadb/services/module/asset/downloads/generated/Collections/General/${collectionName2}/2020/${uploadedAssetName}.${uploadedAssetExt}/image550x350.jpg/${uploadedAssetName}M.${uploadedAssetExt}?includemetadata=true</stringProp>
+              <stringProp name="HTTPSampler.path">/${mainCatalog}/mediadb/services/module/asset/downloads/generated/Collections/General/${collectionName2}/${year}/${uploadedAssetName}.${uploadedAssetExt}/image550x350.jpg/${uploadedAssetName}M.${uploadedAssetExt}?includemetadata=true</stringProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -4636,13 +4641,21 @@
             </hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Check Small conversion" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-                <collectionProp name="Arguments.arguments"/>
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="includemetadata" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.name">includemetadata</stringProp>
+                    <stringProp name="Argument.value">true</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  </elementProp>
+                </collectionProp>
               </elementProp>
               <stringProp name="HTTPSampler.domain">${host}</stringProp>
               <stringProp name="HTTPSampler.port">${port}</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-              <stringProp name="HTTPSampler.path">/${mainCatalog}/mediadb/services/module/asset/downloads/generated/Collections/General/${collectionName2}/2020/${uploadedAssetName}.${uploadedAssetExt}/image110x62cropped.jpg/${uploadedAssetName}110x62cropped.${uploadedAssetExt}?includemetadata=true</stringProp>
+              <stringProp name="HTTPSampler.path">/${mainCatalog}/mediadb/services/module/asset/downloads/generated/Collections/General/${collectionName2}/${year}/${uploadedAssetName}.${uploadedAssetExt}/image110x62cropped.jpg/${uploadedAssetName}110x62cropped.${uploadedAssetExt}</stringProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -5441,13 +5454,20 @@
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Check Large conversion" enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-                  <collectionProp name="Arguments.arguments"/>
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="includemetadata" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">includemetadata</stringProp>
+                      <stringProp name="Argument.value">true</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
                 </elementProp>
                 <stringProp name="HTTPSampler.domain">${hostB}</stringProp>
                 <stringProp name="HTTPSampler.port">${port}</stringProp>
                 <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
                 <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-                <stringProp name="HTTPSampler.path">/${mainCatalog}/mediadb/services/module/asset/downloads/generated/Collections/General/${collectionName2}/2020/${uploadedAssetName}.${uploadedAssetExt}/image1024x768.jpg/${uploadedAssetName}L.jpg?includemetadata=true</stringProp>
+                <stringProp name="HTTPSampler.path">/${mainCatalog}/mediadb/services/module/asset/downloads/generated/Collections/General/${collectionName2}/${year}/${uploadedAssetName}.${uploadedAssetExt}/image1024x768.jpg/${uploadedAssetName}L.jpg</stringProp>
                 <stringProp name="HTTPSampler.method">GET</stringProp>
                 <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
                 <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -5490,13 +5510,20 @@
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Check Small conversion" enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
-                  <collectionProp name="Arguments.arguments"/>
+                  <collectionProp name="Arguments.arguments">
+                    <elementProp name="includemetadata" elementType="HTTPArgument">
+                      <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                      <stringProp name="Argument.name">includemetadata</stringProp>
+                      <stringProp name="Argument.value">true</stringProp>
+                      <stringProp name="Argument.metadata">=</stringProp>
+                    </elementProp>
+                  </collectionProp>
                 </elementProp>
                 <stringProp name="HTTPSampler.domain">${hostB}</stringProp>
                 <stringProp name="HTTPSampler.port">${port}</stringProp>
                 <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
                 <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
-                <stringProp name="HTTPSampler.path">/${mainCatalog}/mediadb/services/module/asset/downloads/generated/Collections/General/${collectionName2}/2020/${uploadedAssetName}.${uploadedAssetExt}/image200x200.jpg/${uploadedAssetName}S.jpg?includemetadata=true</stringProp>
+                <stringProp name="HTTPSampler.path">/${mainCatalog}/mediadb/services/module/asset/downloads/generated/Collections/General/${collectionName2}/${year}/${uploadedAssetName}.${uploadedAssetExt}/image200x200.jpg/${uploadedAssetName}S.jpg</stringProp>
                 <stringProp name="HTTPSampler.method">GET</stringProp>
                 <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
                 <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
