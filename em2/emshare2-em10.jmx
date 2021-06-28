@@ -3984,7 +3984,7 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="uploadAssetToSync" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="uploadAssetToSync" enabled="false">
             <boolProp name="TransactionController.includeTimers">false</boolProp>
             <boolProp name="TransactionController.parent">false</boolProp>
           </TransactionController>
