@@ -2,7 +2,7 @@
 
 echo "$BUILD_NUMBER"
 
-[[ -d dir ]] || mkdir results
+[[ -d dir ]] || mkdir -p results
 [[ -f dir/results10.csv ]] || touch results/results10.csv
 
 ./apache-jmeter-5.3/bin/jmeter -f -n -t em2/emshare2-em10.jmx -l results/results10.csv -JbuildNumber=$BUILD_NUMBER -JexitOnError=1
