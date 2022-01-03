@@ -45,7 +45,7 @@
           </elementProp>
           <elementProp name="collectionPermanentName" elementType="Argument">
             <stringProp name="Argument.name">collectionPermanentName</stringProp>
-            <stringProp name="Argument.value">test100</stringProp>
+            <stringProp name="Argument.value">2022test</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="port" elementType="Argument">
@@ -80,7 +80,7 @@
           </elementProp>
           <elementProp name="collectionName2" elementType="Argument">
             <stringProp name="Argument.name">collectionName2</stringProp>
-            <stringProp name="Argument.value">JmeterSync${__P(buildNumber,2)}</stringProp>
+            <stringProp name="Argument.value">2022JmeterSync${__P(buildNumber,2)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="failedTests" elementType="Argument">
@@ -95,7 +95,7 @@
           </elementProp>
           <elementProp name="year" elementType="Argument">
             <stringProp name="Argument.name">year</stringProp>
-            <stringProp name="Argument.value">2021</stringProp>
+            <stringProp name="Argument.value">2022</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
