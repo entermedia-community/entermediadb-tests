@@ -95,7 +95,7 @@
           </elementProp>
           <elementProp name="year" elementType="Argument">
             <stringProp name="Argument.name">year</stringProp>
-            <stringProp name="Argument.value">2022</stringProp>
+            <stringProp name="Argument.value">2023</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -2160,9 +2160,6 @@
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
-                <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
-                    <stringProp name="ConstantTimer.delay">2000</stringProp>
-                  </ConstantTimer>
               </hashTree>
               <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Check Large conversion" enabled="true">
                 <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
